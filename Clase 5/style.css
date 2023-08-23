@@ -1,0 +1,3 @@
+h2 {
+  color: limegreen; /* El archivo style.css tiene prioridad sobre el style del html */
+}
