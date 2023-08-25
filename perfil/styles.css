@@ -1,0 +1,203 @@
+:root {
+  --cl-red: #b57576;
+  --cl-orange: #ffc09f;
+  --cl-pink: #fff0e9;
+  --cl-green: #ceddbb;
+  --cl-green-2: #d8e2dc;
+  --cl-black: #333;
+  --cl-brown: #be9a60;
+  --cl-blue: #a7c5eb;
+  --cl-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background: rgb(188, 170, 164);
+  background: linear-gradient(
+    77deg,
+    rgba(188, 170, 164, 1) 21%,
+    rgba(215, 204, 200, 1) 100%
+  );
+}
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15vh repeat(3, 1fr) 10vh;
+  width: 100%;
+  height: 90vh;
+  min-width: 650px;
+  max-width: 55vw;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+main > * {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem calc(2rem + 5vw);
+  gap: 1rem;
+}
+h1 {
+  font-size: 3.25rem;
+  color: var(--cl-black);
+}
+h2 {
+  font-size: 2rem;
+  color: var(--cl-red);
+  border-bottom: 2.5px solid var(--cl-red);
+  width: fit-content;
+  margin-bottom: 0.25rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-inline: 0.5rem;
+
+  border-inline: 4px solid var(--cl-white);
+  border-radius: 0.1rem;
+}
+label {
+  color: var(--cl-red);
+  margin-bottom: 0.25rem;
+}
+textarea,
+input {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid var(--cl-red);
+  border-radius: 0.25rem;
+  outline: none;
+  max-width: 25vw;
+  min-width: 240px;
+}
+textarea:focus,
+input:not([type="submit"]):focus {
+  border-color: lightseagreen;
+}
+textarea {
+  resize: none;
+  height: 7rem;
+  color: var(--cl-black);
+}
+input[type="submit"] {
+  min-width: 150px;
+  max-width: 150px;
+  background-color: var(--cl-red);
+  color: var(--cl-white);
+  cursor: pointer;
+  align-self: center;
+}
+input[type="submit"]:active {
+  scale: 0.95;
+}
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+i {
+  font-size: 2rem;
+}
+
+span a {
+  color: white;
+}
+span:hover a {
+  color: var(--cl-red);
+}
+.link:hover {
+  color: var(--cl-red);
+}
+
+/* Contenedor de la primera seccion */
+.cont-nombre-img {
+  align-self: center;
+  flex-direction: row;
+  background-color: var(--cl-red);
+}
+.cont-nombre-img > .cont-img {
+  min-width: 150px;
+  width: 100%;
+  max-width: 175px;
+  height: 150px;
+  border-radius: 20%;
+  background-color: var(--cl-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Oculta cualquier contenido que exceda el contenedor */
+}
+.cont-nombre-img > .cont-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.cont-nombre-img > .cont-nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: fit-content;
+  margin-left: 2rem;
+}
+.cont-nombre-img > .cont-nombre > h1 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2.5px solid var(--cl-black);
+}
+/* Contenedor de la segunda seccion (informacion) */
+.cont-user-info {
+  background-color: var(--cl-green-2);
+}
+.cont-user-info > p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+/* Contenedor de la tercera seccion (formulario) */
+.cont-contacto {
+  background-color: var(--cl-pink);
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vw;
+}
+.cont-contacto > .cont-contacto-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+/* Contenedor de la ultima seccion */
+.cont-footer {
+  flex-direction: row;
+  background-color: var(--cl-black);
+  color: var(--cl-white);
+}
+.cont-footer > * {
+  margin: auto;
+}
+.cont-footer > .cont-footer-redes {
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
