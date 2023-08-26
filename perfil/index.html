@@ -40,8 +40,36 @@
         </p>
       </section>
       <section class="cont-edu-exp">
-        <h2>Educacion</h2>
-        <h2>Experiencia</h2>
+        <div class="educacion">
+          <h2>Educacion</h2>
+          <ul class="list-educacion">
+            <p class="fecha">2021 - Actualidad</p>
+            <ul>
+              <li>Univercidad Nacional de La Plata</li>
+              <li>Licenciatura en Informatica</li>
+            </ul>
+            <p class="fecha">2018 - 2020</p>
+            <ul>
+              <li>Industrial N°4 Jose Menendez</li>
+              <li>Tecnico en Informatica</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="experiencia">
+          <h2>Experiencias</h2>
+          <ul class="list-educacion">
+            <p class="fecha">freeCodeCamp</p>
+            <ul>
+              <li>Responsive Web Design</li>
+              <li>JavaScript Algorithms and Data Structures</li>
+              <li>Front End Development Libraries</li>
+            </ul>
+            <p class="fecha">Nucba: ago 2023 - abr 2024</p>
+            <ul>
+              <li>Programacion front End</li>
+            </ul>
+          </ul>
+        </div>
       </section>
       <!-- https://www.w3docs.com/snippets/html/how-to-create-mailto-forms.html -->
       <section class="cont-contacto">
@@ -54,32 +82,31 @@
             enctype="text/plain"
             class="form-contacto"
           >
-            <label for="name">Nombre:</label>
-            <input
-              type="text"
-              name="Nombre Completo"
-              id="name"
-              placeholder="Nombre Completo"
-            />
-
-            <label for="email">E-mail:</label>
-            <input
-              type="email"
-              name="E-mail"
-              id="email"
-              placeholder="random@email.com"
-            />
-
-            <label for="message">Mensaje:</label>
-            <textarea
-              name="Mensaje"
-              id="message"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
-
-            <input type="submit" value="Enviar" />
+            <div>
+              <label for="name">Nombre:</label>
+              <input
+                type="text"
+                name="Nombre Completo"
+                id="name"
+                placeholder="Nombre Apellido"
+                required
+              />
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                name="E-mail"
+                id="email"
+                placeholder="random@email.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Mensaje:</label>
+              <textarea name="Mensaje" id="message" required></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Enviar" />
+            </div>
           </form>
         </section>
       </section>
